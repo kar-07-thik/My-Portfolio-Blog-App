@@ -60,8 +60,8 @@ const Nav = () => {
                         <p onClick={CloseNav}>X</p>
                     </div>
                     <div className="text-center flex flex-col gap-5 cursor-pointer">
-                        <Link to={"/Home"}><p className="hover:text-[#FDC010] z-30 ">Home</p></Link>
-                        <a href="/Home#About" className="hover:text-[#FDC010]">About</a>
+                        <Link to={"/"}><p className="hover:text-[#FDC010] z-30 ">Home</p></Link>
+                        <a href="/#About" className="hover:text-[#FDC010]">About</a>
                         <Link to="/Blog"><p className="hover:text-[#FDC010]">Blog</p></Link>
                          {
                         Loginbtns ? <button onClick={logOut} style={{ boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px" }} className="bg-[#FDC010] p-1 px-2 w-[50%] m-auto rounded-md hover:text-black text-white" >Login Out</button> : <Link to="/Login"><button style={{ boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px" }} className="bg-[#FDC010] p-1 px-2  rounded-md hover:text-black text-white" >Login</button></Link>
