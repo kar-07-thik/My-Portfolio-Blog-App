@@ -15,7 +15,7 @@ const Login = () => {
             const checkCredential = await signInWithEmailAndPassword(auth, Lemail, Lpass)
             console.log("Login Sucessfully")
             console.log(checkCredential)
-            Navigate("/Home")
+            Navigate("/")
         } catch (error) {
             setLoginErr(true)
             console.log(error)
