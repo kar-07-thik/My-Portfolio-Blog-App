@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+
+  background-image: url(https://img.freepik.com/premium-photo/elegant-white-background-with-glowing-lines-wallpaper_704097-29.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+}
+
+.adminErr {
+
+  gap: 5px;
+  background-color: white;
+  position: absolute;
+  left: 45%;
+  padding: 10px;
+  border-radius: 10px;
+
+  z-index: 20;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  animation-name: Errbox;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+.recentErr {
+  gap: 5px;
+  background-color: white;
+  position: absolute;
+  left: 45%;
+  padding: 10px;
+  border-radius: 10px;
+
+  z-index: 20;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+ animation-name: Errbox;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+
+
+}
+ 
+@keyframes Errbox {
+  0% {
+    transform: translateY(-100px);
+  }
+
+  25% {
+    transform: translateY(20px);
+  }
+
+  50% {
+    transform: translateY(20px);
+  }
+
+  75% {
+    transform: translateY(20px);
+  }
+
+  100% {
+    transform: translateY(-100px);
+  }
+}
+
+.projectTitle{
+  display: inline-block;
+  background-color: #FDC010;
+  padding: 5px;
+  border-radius: 10px;
+  color: white;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+}
+
+
